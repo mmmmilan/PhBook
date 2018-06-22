@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title style="">sobe</title>
+    <meta charset="utf-8" />
+    <link href="Style/StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+   
+    <div id="div1">
+        <div id="div2">
+            <table style="width:100%" id="tab1">
+                <thead>
+                    <tr>
+                        <th hidden>Id </th>
+                        <th>Ime </th>
+                        <th>Prezime</th>
+                        <th>Telefon</th>
+                    </tr>
+                </thead>
+                <tbody id="respns"></tbody>
+            </table>
+            <div>
+                <hr/>
+                <button onclick="location.href='NovoIzmeni.html'" type="button">
+                    Dodaj Nov Kontakt
+                </button>
+            </div>
+        </div>
+        <div id="div3">
+            <div id="child1">
+                <br /><br />
+                <p>---------------------</p>
+                <p>--------------------- </p>
+                <p>--------------------- </p>
+            </div>
+            <div id="child2">
+                <div id="div4">
+                    <label for="inp1">
+                        <input id="inp1" type="text" />
+                    </label>
+                    <button onclick="proveri()">proveri </button>
+                </div>
+                <hr/>
+                <div id="divIzmena" class="sakriveno">
+                    <form id="forma1">
+                        <br />
+                        <div style="padding-left:10px">
+                            <div>
+                                <label for="id">id</label><br />
+                                <input id="id" type="text" name="Id" disabled readonly />
+                            </div>
+                            <div>
+                                <label for="ime">ime</label><br />
+                                <input id="ime" type="text" name="Ime" />
+                            </div>
+                            <div>
+                                <label for="pr">prezime</label><br />
+                                <input id="pr" type="text" name="Prezime" />
+                            </div>
+                            <div>
+                                <label for="br">broj tel</label><br />
+                                <input id="br" type="number" name="BrojTelefona" />
+                            </div>
+                            <span id="span1"></span>
+                            <br />
+                            <input id="Button1" type="button" value="promeni podatke" onclick="izmeniDatas()"/>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/onloadWind.js"></script>
+    <script src="scripts/izmeniKontakt.js"></script>
+    <script src="scripts/pretraziKontakte.js"></script>
+    <script src="scripts/obrisiKontakt.js"></script>
+    <script src="scripts/klikNaRed.js"></script>
+    <script src="scripts/AutomatikAdd.js"></script>
+    <script>
+        var idKlik;
+        var imeKlik;
+        var prezimeKlik;
+        var brojKlik;
+        var datumKlik;
+    </script>
+</body>
+</html>

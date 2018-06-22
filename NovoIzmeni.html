@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        #divGlavni {
+            background-color: #b6ff00;
+            border:1px black;
+            border-radius:6px;
+            width:300px;
+            height:500px
+        }
+    </style>
+</head>
+<body>
+
+    <div id="divGlavni" class="sakriveno">
+        <form id="forma1" >
+            <br />
+            <div style="padding-left:10px">
+                <div>
+                    <label for="Text1">id</label><br />
+                    <input id="Id" type="number" name="Id" readonly disabled placeholder="xxx"/>
+                </div>
+                <div>
+                    <label for="Ime">ime</label><br />
+                    <input id="Ime" type="text" name="Ime" placeholder="Aleksandar " />
+                </div>
+                <div>
+                    <label for="Prezime">prezime</label><br />
+                    <input id="Prezime" type="text" name="Prezime" placeholder="Kolarov" />
+                </div>
+                <div>
+                    <label for="BrojTelefona">broj tel</label><br />
+                    <input id="BrojTelefona" type="number" name="BrojTelefona" placeholder="064111222"/>
+                </div>
+                <br />
+                <input id="Button1" type="button" value="Kreiraj Nov kontakt!" onclick="ubaci()"/>
+                <span id="span1" style="color:red"></span>
+            </div> 
+        </form>
+    </div>
+
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/dodajKontakt.js"></script>
+
+</body>
+
+</html>
